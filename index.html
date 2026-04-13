@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="zh-Hans">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>我的 GitHub Pages 网站</title>
+  <style>
+    body{font-family:system-ui,-apple-system,Segoe UI,Roboto,"Noto Sans SC",sans-serif;
+         margin:40px;color:#222;}
+    header{margin-bottom:20px;}
+    a.button{display:inline-block;padding:8px 12px;background:#0064e6;color:#fff;border-radius:6px;text-decoration:none;}
+  </style>
+</head>
+<body>
+  <header>
+    <h1>欢迎来到我的网站</h1>
+    <p>这是一个最简单的 GitHub Pages 示例页面。</p>
+  </header>
+
+  <main>
+    <p>今天是：<span id="today"></span></p>
+    <p><a class="button" href="https://github.com">访问 GitHub</a></p>
+  </main>
+
+  <script>
+    document.getElementById('today').textContent = new Date().toLocaleDateString();
+  </script>
+</body>
+</html>
